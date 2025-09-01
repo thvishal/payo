@@ -1,0 +1,981 @@
+#err-msg,
+#show-calculator-modal,
+.both-input-container .country-input-new:nth-child(2),
+.error,
+.esti-tax-container,
+.list-cotainer.list-modal,
+.list-modal,
+.second {
+  display: none;
+}
+.home-calc-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(
+    89.19deg,
+    #faf4fd 0%,
+    #f0f9fd 57.96%,
+    #f1fcfb 100%
+  );
+}
+#currency-input,
+.country-down-arrow,
+.list-items:hover,
+.slider {
+  cursor: pointer;
+}
+
+.left-form-container,
+input[type="radio"],
+input[type="search"] {
+  background-color: transparent;
+}
+.calculator-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 90px;
+}
+.left-form-container {
+  width: 45%;
+  position: relative;
+  z-index: 0;
+  display: flex;
+}
+.d-block,
+.d-grey-bg {
+  display: block;
+}
+.cur-input-container,
+.input-pos-relative,
+.switch,
+.switch-button-checkbox + .switch-button-label .switch-button-label-span,
+.tool-tip,
+input[type="radio"] {
+  position: relative;
+}
+.switch-wrapper [type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+.switch-wrapper [type="radio"]:checked#calc-yearly ~ label[for="calc-yearly"],
+.switch-wrapper
+  [type="radio"]:checked#toggle-year-month
+  ~ label[for="toggle-year-month"] {
+  color: #fff;
+  /* background-color: #252526 !important; */
+  /* background: linear-gradient(90deg, #9064DA 0%, #2171E0 49.37%, #844EB4 100%); */
+  /* border-color: #252526; */
+}
+.switch-wrapper
+  [type="radio"]:checked#calc-yearly
+  + label[for="toggle-year-month"]
+  ~ .highlighter {
+  transform: translateX(100%);
+}
+.switch-wrapper label {
+  font-size: 14px;
+  z-index: 1;
+  min-width: 70px;
+  line-height: 20.87px;
+  cursor: pointer;
+  border-radius: 3.43px;
+  transition: color 0.25s ease-in-out;
+  font-weight: 400;
+  padding: 6px 20px;
+}
+
+.switch-wrapper .highlighter {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(50% - 0px);
+  height: calc(100% - 0px);
+  border-radius: 3.43px;
+  background: linear-gradient(90deg, #9064da 0%, #2171e0 49.37%, #844eb4 100%);
+  border-radius: 100px;
+  transition: transform 0.25s ease-in-out;
+  /* background-color: #252526; */
+}
+input[type="radio"]:checked {
+  border-color: var(--_payo-variables---payo-btn-hover);
+}
+input[type="radio"] {
+  appearance: none;
+  border: 1px solid #d9dade;
+  border-radius: 50%;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+#is-expact-no[type="radio"]:checked:after,
+#is-expact-yes[type="radio"]:checked:after {
+  position: absolute;
+  content: "";
+  background-color: var(--_payo-variables---payo-btn-hover);
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.switch-wrapper {
+  position: relative;
+  display: inline-flex;
+  padding: 4px;
+  text-align: center;
+  width: auto !important;
+  border-radius: 100px;
+  border: 1px solid #25252629;
+}
+.tool-tip .tooltiptext {
+  visibility: hidden;
+  width: 340px;
+  background-color: #0092f4;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 2px;
+  bottom: 30px;
+  left: -77px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.input-wrapper-new {
+  flex-direction: column;
+}
+.calc-heading-wrapper {
+  position: relative;
+  max-width: 445px;
+}
+.calc-heading-wrapper h2 {
+  font-size: 42px;
+  line-height: 140%;
+  color: #252526;
+  font-family: Avenirnextworld Demi, Arial, sans-serif;
+}
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 10px 10px 30px 0 rgba(117, 103, 103, 0.1);
+  margin-top: 48px;
+  background-color: #fff;
+  max-width: 456px;
+}
+.country-input-new input[type="search" i] {
+  box-sizing: border-box;
+  padding-right: 48px;
+  font-size: 14px;
+}
+.country-input-new input {
+  height: 100%;
+  padding: 6px 16px;
+  width: 100%;
+  outline: 0;
+  border: 0;
+}
+
+input#country-input::placeholder {
+  font-weight: 600;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+  border: none;
+}
+.both-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #252526;
+  border-radius: 8px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 6px 0;
+}
+.country-input-new {
+  position: relative;
+  width: 100%;
+}
+#currency-input {
+  background-image: url("https://assets-global.website-files.com/61cda68a44d858d793b97e11/61cda68a44d85826cbb98024_expand_more_black_24dp.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.75rem) center !important;
+  min-width: 110px;
+  cursor: pointer;
+  color: #252526;
+}
+#country-input::placeholder {
+  font-weight: 400;
+}
+
+.country-input-new.border-right {
+  border-right: 1px solid #252526;
+}
+.input-down-arrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translate(-50%, -50%);
+}
+.list-cotainer {
+  top: 42px;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid rgba(6, 19, 45, 0.15);
+  border-radius: 4px;
+}
+.list-items {
+  margin: 10px 0;
+  color: #000;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 5px 0 5px 5px;
+}
+.list-cotainer li {
+  padding-left: 20px;
+}
+.list-cotainer,
+.toggle-modal,
+.tool-tip .tooltiptext {
+  position: absolute;
+  z-index: 1;
+}
+.info-icon-container:hover .tooltiptext-top,
+.tool-tip:hover .tooltiptext {
+  visibility: visible;
+}
+.acc-item-container,
+.list-cotainer {
+  list-style-type: none;
+  padding-left: 0;
+}
+.currency-input-container-inner,
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+.currency-input-container-inner {
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.calculator-input-field,
+.salary-input,
+.surrency-select {
+  background-color: transparent;
+  outline: 0;
+  width: 100%;
+  border: unset;
+  color: #252526;
+  padding: 13px;
+  height: 48px;
+  font-weight: 600;
+}
+.cur-input-container-inner,
+.salary-input,
+.surrency-select {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.calculator-input-field::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+.is-expact-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+  align-self: flex-start;
+}
+.expact-radio-container {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.expact-radio-container div {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+#calc-home-img img,
+.calculate-btn-wrapper,
+.first-col-home,
+.second-col-home {
+  width: 100%;
+}
+.btnnew {
+  height: 48px;
+  min-width: 200px;
+  padding: 8px 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 500px;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.btnnew.containedbtn {
+  background-color: #252526;
+  color: #fff;
+  width: 100%;
+}
+button[disabled]#calculate-salary {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.btnnew.containedbtn.calculate-active:hover {
+  background-color: var(--_payo-variables---payo-btn-hover);
+}
+.download-pdf:hover {
+  background-color: var(--_payo-variables---payo-btn-hover);
+}
+#read-more-container {
+  display: none;
+  max-width: 90px;
+  margin-left: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+.calculator-dsc-container {
+  margin-top: 16px;
+  max-width: 442px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.calculator-dsc {
+  /*background-color: #f1f5fd;*/
+  /*padding: 10px;*/
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #878787;
+  margin-top: 16px;
+  list-style: none;
+  border-radius: 4px;
+}
+.cal-result-parent-container,
+.download-pdf,
+.remove-bg-cal {
+  background-color: transparent;
+}
+.cal-result-parent-container {
+  width: 50%;
+}
+#err-msg {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  background-color: #fff;
+  text-align: center;
+}
+.error-msg-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 54px 51px 62px;
+  border: 1px solid #252526;
+  border-radius: 4px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.07);
+  margin-top: 52px;
+}
+.toggle-btn-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.download-pdf-toggle-year-contaiiner,
+.est-tax-cal-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.salary-contribution h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #252526;
+}
+.download-pdf {
+  align-items: center;
+  column-gap: 10px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  background-color: #252526;
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+
+.download-pdf span {
+  /* text-decoration: underline; */
+  font-size: 12px;
+  font-weight: 600;
+}
+.current-country-wrapper {
+  font-size: 32px;
+  line-height: 50.4px;
+  gap: 5px;
+  text-align: left;
+}
+#calc-selected-country,
+#selected-province,
+.country-heading,
+.calc-heading-wrapper h2,
+.salary-contribution h2 {
+  font-family: Avenirnextworld Demi, Arial, sans-serif !important;
+  font-weight: 600;
+  color: #252526 !important;
+}
+.currency-type,
+.duration-salary,
+.skuad-offer-label {
+  font-weight: 600;
+}
+
+.accordian-section,
+.cost-label-align,
+.employment-cost {
+  font-size: 16px;
+}
+.cost-label-align,
+.employment-cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordian-main,
+.breakups-main,
+.cost-label-align {
+  border-bottom: 2px solid #2525261a;
+}
+.accordian-main,
+.cost-label-align,
+.employment-cost {
+  padding-bottom: 16px;
+  padding-right: 16px;
+  margin-top: 16px;
+}
+.accordian-main {
+  width: 100%;
+  justify-content: space-between;
+  /*border-bottom: 2px solid rgba(23, 50, 75, 0.1);*/
+  border-bottom: unset;
+  padding-bottom: 16px;
+}
+.d-flex-align-center,
+.new-heading-wrapper,
+.right-inner-container {
+  display: flex;
+  align-items: center;
+}
+.dis-offer-active {
+  column-gap: 7px;
+}
+.skuad-offer-label {
+  background: linear-gradient(
+    85.91deg,
+    #faf4fd -31.4%,
+    #f0f9fd 57.96%,
+    #f1fcfb 146.43%
+  );
+  padding: 2px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  color: var(--_payo-variables---payo-body-color);
+  font-weight: 600;
+  border: 0.5px solid #878787;
+}
+.offer-active {
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+.skuad-dis-fee {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: end;
+}
+.skuad-dis-fee p {
+  text-decoration: line-through;
+}
+.btn-new.contained-btn,
+.read-more-btn {
+  text-decoration: none;
+}
+.cont-breakup.hidden {
+  border: 0;
+  margin-top: 0;
+}
+.cont-breakup {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s linear;
+  height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.inner-breakup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #252526;
+}
+.inner-breakup ul {
+  width: 100%;
+}
+.d-flex-new.justify-content-space-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.seprator-border {
+  height: 2px;
+  width: auto;
+  background-color: #2525261a;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+.req-demo-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+  line-height: 140%;
+}
+.req-demo-container a {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  border: 0;
+  padding: 8px 20px;
+}
+.req-demo-container p {
+  margin-right: 4px;
+}
+#download-calc-pdf,
+.req-demo-container a {
+  background-color: #fff;
+  color: #252526;
+  text-decoration: none;
+  max-width: 250px;
+  font-weight: 700;
+  /*height: 48px;*/
+  outline: #252526 solid 1px;
+}
+
+.employment-cost-label {
+  font-weight: 600;
+}
+
+.blue-loopimg {
+  position: absolute;
+  left: 250px;
+  bottom: -45px;
+  z-index: 3;
+}
+.d-flex-align-center img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.rotate-180 {
+  transition: 0.4s;
+  transform: rotate(180deg);
+}
+.breakups-main,
+.list-modal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+}
+.breakups-main {
+  border: 1px solid #e2e4f0;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+.cont-breakup {
+  background-color: #fff;
+}
+.tool-tip svg {
+  margin-left: 4px;
+}
+.calculator-dsc-container ul {
+  padding-left: 0;
+}
+.list-cotainer li:hover {
+  background-color: #add8e6;
+  cursor: pointer;
+}
+.active,
+.list-items:hover {
+  color: #252526;
+  opacity: 1;
+}
+.read-more-btn {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: end;
+  margin-top: 16px;
+  cursor: pointer;
+  color: #132f4e;
+  column-gap: 3px;
+}
+.d-more-list-btn {
+  justify-content: end;
+  display: block !important;
+}
+.currency {
+  width: 105px;
+}
+.tool-tip svg {
+  margin-top: 5px;
+}
+.tool-tip svg g {
+  fill: #252526;
+}
+li.ml-auto {
+  text-wrap: nowrap;
+}
+.accordian-section > div {
+  border-bottom: 2px solid rgba(23, 50, 75, 0.1);
+}
+.breakups-main.cont-breakup.hidden {
+  margin-bottom: 0 !important;
+}
+.breakups-main.cont-breakup {
+  margin-bottom: 16px;
+}
+
+/* .currency {
+  border-right: 1px solid #252526 !important;
+} */
+
+.salary {
+  border-left: 1px solid #252526 !important;
+}
+@media screen and (max-width: 991px) {
+  #form {
+    width: 100%;
+  }
+  .home-calc-container {
+    background: linear-gradient(
+      89.19deg,
+      #faf4fd 0%,
+      #f0f9fd 57.96%,
+      #f1fcfb 100%
+    );
+  }
+  .calculator-dsc-container {
+    max-width: 500px;
+  }
+  .current-country-wrapper {
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 600;
+  }
+  .blue-loopimg {
+    left: 330px;
+    bottom: -65px;
+  }
+  .req-demo-container a {
+    padding: 8px 30px;
+    font-size: 18px;
+  }
+  .result-inner-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .grey-pattern-new {
+    display: none !important;
+  }
+  div .d-flex-new .d-flex-align-center p {
+    font-size: 18px;
+    display: contents;
+  }
+  .left-form-container {
+    width: 100%;
+    /*background-color: #e2ebfb;*/
+  }
+
+  .cal-result-parent-container {
+    width: 100%;
+  }
+  .result-wrapper {
+    max-width: none;
+  }
+  .calculator-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .currency-type,
+  .duration-salary,
+  .duration-title,
+  .req-demo-container p,
+  .right-side-value,
+  .total-currency {
+    font-size: 18px;
+  }
+  .calculator-form {
+    flex-direction: column;
+    align-items: start;
+  }
+  .input-wrapper > div {
+    margin-top: 12px;
+  }
+  .input-wrapper {
+    flex-direction: column !important;
+    row-gap: 20px !important;
+  }
+  .input-wrapper-new {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .first-col,
+  .second-col {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .calculator-form {
+    padding: 0 16px 0 0;
+  }
+  .calc-heading-wrapper {
+    max-width: 492px;
+  }
+  .calc-heading-wrapper h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .employment-cost p {
+    color: #252526;
+  }
+
+  #calc-home-img img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .home-calc-container {
+    padding: 48px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #calc-home-img img {
+    width: 100%;
+  }
+  .home-calc-container {
+    padding: 36px 0;
+  }
+  .calculator-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .calculate-btn-wrapper {
+    margin: auto;
+  }
+  .list-cotainer {
+    top: 55px;
+    left: 0;
+    z-index: 21;
+  }
+  .currency-input-container {
+    display: flex;
+  }
+  .btnnew {
+    width: 100%;
+  }
+  .calc-heading-wrapper h2,
+  .current-country-wrapper {
+    font-size: 26px;
+    line-height: 31.2px;
+    text-align: center;
+  }
+  .download-pdf-toggle-year-contaiiner {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .req-demo-container a {
+    padding: 8px 15px;
+    height: auto;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .dis-offer-active {
+    flex-direction: column;
+    align-items: self-start !important;
+    row-gap: 7px;
+  }
+  .salary-calculator-left {
+    max-width: auto;
+    flex: 1;
+  }
+  .currency-type,
+  .d-flex-align-center p,
+  .d-flex-new .currency-type,
+  .d-flex-new .duration-salary,
+  .duration-salary,
+  .duration-title,
+  .employment-cost p,
+  .req-demo-container p,
+  .right-side-value,
+  .total-currency,
+  div .d-flex-new .d-flex-align-center p {
+    font-size: 16px;
+  }
+
+  #calculation-wrapper,
+  .switch-wrapper {
+    padding: 0;
+  }
+  .accordian-main {
+    padding-right: 0;
+    font-size: 12.5px;
+  }
+  .cal-result-parent-container {
+    width: 100%;
+    padding: 0 20px 32px;
+  }
+  .cost-label-align,
+  .employment-cost {
+    font-size: 14px;
+    padding-right: 0;
+  }
+  .d-flex-align-center {
+    align-items: center;
+    position: relative;
+  }
+  .salary-contribution h2 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .tool-tip .tooltiptext {
+    width: 230px;
+    left: -100px;
+  }
+  .error-msg-heading {
+    font-size: 25px;
+  }
+  .error-msg-container {
+    padding: 25px !important;
+  }
+  .employment-cost-label {
+    max-width: 50%;
+  }
+  .input-wrapper {
+    max-width: none !important;
+  }
+  .calc-heading-wrapper {
+    max-width: 293px;
+    margin: 0 auto;
+  }
+  .input-wrapper-new {
+    width: 100% !important;
+    align-items: normal;
+  }
+  .calc-home-img img {
+    object-fit: cover;
+  }
+  .toggle-btn-wrapper {
+    align-items: center;
+  }
+  .home-calc-container {
+    padding: 32px 0;
+  }
+  .skuad-offer-label {
+    margin-left: 0;
+  }
+  .grey-bg-with-pattern {
+    height: 46%;
+  }
+  
+  #currency-input {
+    min-width: auto;
+    font-size: 16px;
+    width: 120px;
+  }
+  .accordian-main .d-flex-new,
+  .cost-label-align .d-flex-new,
+  .employment-cost .d-flex-new {
+    justify-content: end !important;
+    align-items: end;
+  }
+  .skuad-dis-fee p {
+    font-size: 14px;
+  }
+  .req-demo-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    font-size: 18px;
+  }
+  .blue-loopimg {
+    left: 210px;
+  }
+  #form {
+    width: auto;
+  }
+  .switch-wrapper label {
+    min-width: 83px;
+  }
+  .tool-tip svg {
+    margin-top: 6px;
+  }
+  .offer-active {
+    flex-direction: column-reverse;
+    gap: 6;
+  }
+}
