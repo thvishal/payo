@@ -7,7 +7,7 @@ import {
     filterList,
     // updateMeta,
     commaSeprateVal
-} from " https://dl.dropboxusercontent.com/scl/fi/te4u95ynukh6p4kyce411/widget-helper.js?rlkey=nfbvw2pfbmiflji7picouahk8&st=2ghio4ld&dl=0"
+} from "https://cdn.jsdelivr.net/gh/thvishal/payo/widget-helper.js"
 
 let currencyList = [
     { label: "USD", value: "USD" },
