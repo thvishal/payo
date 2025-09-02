@@ -1,0 +1,1 @@
+fetch("https://api.geoapify.com/v1/ipinfo?&apiKey=c23115da6cf642e59b96f32b9d512a4c").then((o=>o.json())).then((o=>{const e=o.country?.iso_code?.toUpperCase(),t=document.querySelector("#cookie-setting p");t&&(t.textContent="US"===e||"USA"===e?"Do Not Sell/Share My Personal Information":"Cookies Settings")})).catch((o=>{console.info("Geoapify location lookup failed:",o)}));
