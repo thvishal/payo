@@ -1,1 +1,8 @@
-
+.accordion-item-content {
+    transform: scale(0.9);
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease, height 0.3s ease, opacity 0.8s ease;
+    will-change: transform , height , opacity;
+}
